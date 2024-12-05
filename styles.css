@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #ff61a6;
+    background-color: #008080;
     padding: 15px;
     color: white;
     margin-bottom: 60px; /* Added margin at the bottom of the header */
@@ -50,7 +50,7 @@ header h1 {
 
 h2 {
     font-size: 2rem;
-    color: #ff61a6;
+    color: #008080;
     margin-bottom: 20px;
 }
 
@@ -122,17 +122,17 @@ button {
     right: 10px;
     font-size: 5rem;
     cursor: pointer;
-    color: #ff61a6;
+    color: #008080;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #ff61a6;
+    color: #008080;
     margin-top: 20px;
 }
 
 footer {
-    background-color: #ff61a6;
+    background-color: #008080;
     color: white;
     padding: 20px 0; /* Added more padding for the footer */
     position: fixed;
