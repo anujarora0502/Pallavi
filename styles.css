@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+header {
+    background-color: #ff61a6;
+    padding: 15px;
+    color: white;
+    margin-bottom: 60px; /* Added margin at the bottom of the header */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 0; /* No margin at the top of the header */
+}
+
+.collage-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.message-section {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff61a6;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.no-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Move "No" Button Randomly but Only Horizontally */
+.no-btn:hover {
+    animation: moveButtonAnimation 2s infinite ease-in-out;
+}
+
+/* Horizontal Random Button Movement */
+@keyframes moveButtonAnimation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(50px); }
+    50% { transform: translateX(-100px); }
+    75% { transform: translateX(150px); }
+    100% { transform: translateX(-50px); }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #ff61a6;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #ff61a6;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #ff61a6;
+    color: white;
+    padding: 20px 0; /* Added more padding for the footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 600px) {
+    .image-collage {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

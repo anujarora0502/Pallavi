@@ -1,58 +1,51 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff69b4;
-            color: white;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .gallery img {
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #ff69b4;
-            color: white;
-        }
-    </style>
+    <title>Pallavi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>For You</header>
-    <p>Some memories we cherish together:</p>
-    <div class="gallery">
-        <img src="20240103_011842.jpg" alt="Memory 1">
-        <img src="photos/photo2.jpg" alt="Memory 2">
-        <img src="photos/photo3.jpg" alt="Memory 3">
-        <img src="photos/photo4.jpg" alt="Memory 4">
-        <img src="photos/photo5.jpg" alt="Memory 5">
-        <img src="photos/photo6.jpg" alt="Memory 6">
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>I love you, Pallavi 💖</h1>
+    </header>
+
+    <!-- Image Collage -->
+    <div class="collage-container">
+        <div class="image-collage">
+            <img src="img/1.jpg" alt="Image 1">
+            <img src="img/2.jpg" alt="Image 2">
+            <img src="img/3.jpg" alt="Image 3">
+            <img src="img/4.jpg" alt="Image 4">
+            <img src="img/5.jpg" alt="Image 5">
+        </div>
     </div>
-    <footer>
-        With love, always.
+
+    <!-- Message Section -->
+    <section class="message-section">
+        <h2>Do you love me?</h2>
+        <div class="buttons">
+            <button class="yes-btn" onclick="showModal()">Yes</button>
+            <button class="no-btn" onmouseover="moveButton()">No</button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3>I'm so sorry for everything... I love you! 💖, I know you love me a lot, please forgive me for what I have done, I never intend to hurt you, but I can't stay away from you, you mean the world to me.</h3>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Made with ❤️ by Anuj</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
